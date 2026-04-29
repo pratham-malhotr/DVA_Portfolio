@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratham Malhotra (pushkar-bit)</title>
+    <title>Pratham Malhotra (pratham-malhotr)</title>
     <style>
         /* GitHub Dark Mode Variables */
         :root {
@@ -258,10 +258,10 @@
     <div class="container">
         <aside class="sidebar">
             <div class="sidebar-header">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Avatar" class="avatar">
+                <img src="./profile.png" alt="Avatar" class="avatar">
                 <div class="vcard-names">
                     <h1 class="vcard-fullname">Pratham Malhotra</h1>
-                    <h2 class="vcard-username">pushkar-bit</h2>
+                    <h2 class="vcard-username">pratham-malhotr</h2>
                 </div>
             </div>
             
@@ -307,7 +307,7 @@
             <nav class="UnderlineNav">
                 <div class="UnderlineNav-item">
                     <svg viewBox="0 0 16 16"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
-                    Repositories <span class="repo-count" id="repo-count-badge">1</span>
+                    Repositories <span class="repo-count" id="repo-count-badge">2</span>
                 </div>
             </nav>
 
@@ -342,22 +342,51 @@
                     </div>
                 </div>
 
+                <div class="repo-card open-modal-btn" data-category="python" data-title="Banking-Churn-Prediction" data-img="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" data-link="https://github.com/garariya/SectionE_G-12_Banking_churn_prediction" data-desc="Analyzed banking customer behavior to identify churn patterns and risk factors using Python and Tableau.">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Cover" class="card-cover-image">
+                    <div class="repo-card-body">
+                        <div class="repo-header">
+                            <div class="repo-title-group">
+                                <svg class="icon"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+                                <a href="https://github.com/garariya/SectionE_G-12_Banking_churn_prediction" class="repo-title">Banking-Churn-Prediction</a>
+                            </div>
+                            <span class="repo-badge">Public</span>
+                        </div>
+                        <p class="repo-desc">Analyzed banking customer behavior to identify churn patterns and risk factors using Python and Tableau.</p>
+                        <div class="repo-tags"><span class="topic-tag">python</span><span class="topic-tag">tableau</span><span class="topic-tag">data-analytics</span></div>
+                        <div class="repo-footer">
+                            <span><span class="lang-color lang-python"></span> Python</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="no-results" id="no-results-msg">
                     No repositories match your search or filter.
                 </div>
             </div>
 
-            <div class="contrib-graph">
-                <div class="contrib-title">1,402 contributions in the last year</div>
-                <div class="graph-squares">
-                    <script>
-                        const classes = ['g-sq', 'g-sq g-l1', 'g-sq g-l2', 'g-sq', 'g-sq', 'g-sq g-l3', 'g-sq', 'g-sq g-l4', 'g-sq g-l1'];
-                        for(let i=0; i<200; i++) {
-                            const randomClass = classes[Math.floor(Math.random() * classes.length)];
-                            document.write(`<div class="${randomClass}"></div>`);
-                        }
-                    </script>
+                        <div class="contrib-graph">
+                <div class="contrib-title">Contributions in the last year</div>
+                <!-- Include the library. -->
+                <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+                <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+                <div class="calendar" style="min-height: 150px; border: none; padding: 0;">
+                    Loading the data just for you.
                 </div>
+                <script>
+                    GitHubCalendar(".calendar", "pratham-malhotr", { responsive: true });
+                </script>
+                <style>
+                    .calendar { border: none !important; color: var(--gh-text-main); }
+                    .calendar .graph-before-activity-overview { border: none !important; }
+                    .calendar rect.ContributionCalendar-day[data-level="0"] { fill: #161b22; }
+                    .calendar rect.ContributionCalendar-day[data-level="1"] { fill: #0e4429; }
+                    .calendar rect.ContributionCalendar-day[data-level="2"] { fill: #006d32; }
+                    .calendar rect.ContributionCalendar-day[data-level="3"] { fill: #26a641; }
+                    .calendar rect.ContributionCalendar-day[data-level="4"] { fill: #39d353; }
+                    .calendar .text-muted { color: var(--gh-text-muted) !important; }
+                    .calendar text.ContributionCalendar-label { fill: var(--gh-text-muted); font-size: 12px;}
+                </style>
             </div>
 
         </main>
@@ -367,7 +396,7 @@
         <p>&copy; <span id="current-year"></span> Pratham Malhotra. All rights reserved.</p>
         <div style="margin-top: 8px;">
             <a href="https://www.linkedin.com/in/pratham-malhotra-111553323/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/pushkar-bit" target="_blank">GitHub</a>
+            <a href="https://github.com/pratham-malhotr" target="_blank">GitHub</a>
             <a href="mailto:prathammalhotra2410@gmail.com">Contact</a>
         </div>
     </footer>
